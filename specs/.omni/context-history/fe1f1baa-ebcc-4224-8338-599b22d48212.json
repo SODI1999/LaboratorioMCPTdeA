@@ -1,0 +1,13 @@
+{
+  "recordedAt": "2026-11-01T07:20:42.363Z",
+  "scope": "CONTEXT_INPUTS_V3",
+  "inputs": {
+    "AGENTS.md": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CLAUDE.md": "ca07c1712e4cd6ee2d318d1789ef215c9357c4478b02a8d22da63717d35e5b1a",
+    "CONSTITUTION.md": "6f736c02bcedc2a79703749c995aedc9eacbce10f6ef2a8780d61ad754e8a1c4",
+    "Guia-LaboratorioMCPTDEA.pdf": "603c632edc38b1207a09b7b874e905b3f70fcaf075c7ae4b349e3ad6d648242a",
+    "specs/project-context.md": "6c0fe27909a8df91b5b9eeda1dcea1319d8fad9eab0d389c6dc55b4359cc1943"
+  },
+  "reviewScope": "EOL_NORMALIZED_BASELINE_AND_STRUCTURAL_LINKS_ONLY",
+  "semanticReview": "AGENT_OR_HUMAN_REQUIRED"
+}

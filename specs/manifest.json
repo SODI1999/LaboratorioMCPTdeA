@@ -1,0 +1,334 @@
+{
+  "$schema": "./.omni/runtime/schema/manifest.schema.json",
+  "schemaVersion": 1,
+  "project": "LaboratorioMCPTdeA",
+  "version": "0.9.0",
+  "profile": "general",
+  "stack": "Java 21 (JDK 25), Spring Boot 4.1.2, Spring AI 2.0.1, H2 Database 2.4.240",
+  "documentationStandard": "Javadoc",
+  "qualityGates": "",
+  "agent": "codex",
+  "language": "es",
+  "active_spec": null,
+  "active_archetype": null,
+  "specs": [
+    {
+      "id": "001",
+      "type": "feature",
+      "slug": "001-bank-mcp-server",
+      "title": "Bank Mcp Server",
+      "status": "COMPLETED",
+      "created_at": "2026-11-01",
+      "branch": "feat/001-bank-mcp-server",
+      "updated_at": "2026-11-01T08:44:09.129Z",
+      "completed_at": "2026-11-01T08:44:09.129Z",
+      "verification": {
+        "mode": "automated",
+        "verifiedAt": "2026-11-01T08:43:06.393Z",
+        "fingerprint": "08ee1ef2a632ec70475038ac9cf4fd7c558fe68075ecc2f928c4c958c6eea9c9",
+        "acceptance": {
+          "criteria": [
+            {
+              "id": "AC-01",
+              "status": "passed",
+              "method": "automated",
+              "kind": "functional",
+              "checkIds": [
+                "test"
+              ],
+              "checks": [
+                {
+                  "checkId": "test",
+                  "command": ".\\mvnw.cmd test",
+                  "cwd": ".",
+                  "status": "PASSED"
+                }
+              ],
+              "execution": "PASSED"
+            },
+            {
+              "id": "AC-02",
+              "status": "passed",
+              "method": "automated",
+              "kind": "functional",
+              "checkIds": [
+                "test"
+              ],
+              "checks": [
+                {
+                  "checkId": "test",
+                  "command": ".\\mvnw.cmd test",
+                  "cwd": ".",
+                  "status": "PASSED"
+                }
+              ],
+              "execution": "PASSED"
+            },
+            {
+              "id": "AC-03",
+              "status": "passed",
+              "method": "automated",
+              "kind": "functional",
+              "checkIds": [
+                "test"
+              ],
+              "checks": [
+                {
+                  "checkId": "test",
+                  "command": ".\\mvnw.cmd test",
+                  "cwd": ".",
+                  "status": "PASSED"
+                }
+              ],
+              "execution": "PASSED"
+            },
+            {
+              "id": "AC-04",
+              "status": "passed",
+              "method": "automated",
+              "kind": "functional",
+              "checkIds": [
+                "test"
+              ],
+              "checks": [
+                {
+                  "checkId": "test",
+                  "command": ".\\mvnw.cmd test",
+                  "cwd": ".",
+                  "status": "PASSED"
+                }
+              ],
+              "execution": "PASSED"
+            },
+            {
+              "id": "AC-05",
+              "status": "passed",
+              "method": "automated",
+              "kind": "functional",
+              "checkIds": [
+                "test"
+              ],
+              "checks": [
+                {
+                  "checkId": "test",
+                  "command": ".\\mvnw.cmd test",
+                  "cwd": ".",
+                  "status": "PASSED"
+                }
+              ],
+              "execution": "PASSED"
+            },
+            {
+              "id": "AC-06",
+              "status": "passed",
+              "method": "automated",
+              "kind": "functional",
+              "checkIds": [
+                "test"
+              ],
+              "checks": [
+                {
+                  "checkId": "test",
+                  "command": ".\\mvnw.cmd test",
+                  "cwd": ".",
+                  "status": "PASSED"
+                }
+              ],
+              "execution": "PASSED"
+            },
+            {
+              "id": "AC-07",
+              "status": "passed",
+              "method": "automated",
+              "kind": "functional",
+              "checkIds": [
+                "test"
+              ],
+              "checks": [
+                {
+                  "checkId": "test",
+                  "command": ".\\mvnw.cmd test",
+                  "cwd": ".",
+                  "status": "PASSED"
+                }
+              ],
+              "execution": "PASSED"
+            },
+            {
+              "id": "AC-08",
+              "status": "passed",
+              "method": "automated",
+              "kind": "functional",
+              "checkIds": [
+                "package"
+              ],
+              "checks": [
+                {
+                  "checkId": "package",
+                  "command": ".\\mvnw.cmd clean package",
+                  "cwd": ".",
+                  "status": "PASSED"
+                }
+              ],
+              "execution": "PASSED"
+            }
+          ],
+          "scope": "DECLARED_EVIDENCE_WITH_EXECUTED_CHECK_BINDINGS",
+          "truthOfEvidence": "AGENT_OR_HUMAN_REVIEW_REQUIRED",
+          "automatedChecksPassed": true
+        }
+      }
+    },
+    {
+      "id": "002",
+      "type": "feature",
+      "slug": "002-pruebas-reales-entregable",
+      "title": "Pruebas Reales Entregable",
+      "status": "COMPLETED",
+      "created_at": "2026-11-14",
+      "branch": "feat/002-pruebas-reales-entregable",
+      "updated_at": "2026-11-14T05:52:37.404Z",
+      "completed_at": "2026-11-14T05:52:37.404Z",
+      "verification": {
+        "mode": "automated",
+        "verifiedAt": "2026-11-14T05:52:18.161Z",
+        "fingerprint": "41a471b490ec3c3f8f7d137628587848f3580f0927ac4cb44426cdb3662b37ce",
+        "acceptance": {
+          "criteria": [
+            {
+              "id": "AC-01",
+              "status": "passed",
+              "method": "automated",
+              "kind": "functional",
+              "checkIds": [
+                "test",
+                "package"
+              ],
+              "exercises": "SpringBootTest real con JPA/H2 en memoria; empaquetado ejecutable Spring Boot.",
+              "limits": "Los gates Maven no sustituyen la invocación MCP observada ni prueban concurrencia.",
+              "checks": [
+                {
+                  "checkId": "test",
+                  "command": "node scripts/maven-check.mjs test",
+                  "cwd": ".",
+                  "status": "PASSED"
+                },
+                {
+                  "checkId": "package",
+                  "command": "node scripts/maven-check.mjs package",
+                  "cwd": ".",
+                  "status": "PASSED"
+                }
+              ],
+              "execution": "PASSED"
+            },
+            {
+              "id": "AC-02",
+              "status": "passed",
+              "method": "automated",
+              "kind": "functional",
+              "checkIds": [
+                "http-transport"
+              ],
+              "exercises": "Build HTTP y proceso Java con H2 en memoria; initialize, initialized, tools/list, dos saldos e historial reales por loopback.",
+              "limits": "La persistencia se verificó adicionalmente sobre bankdb en modo de solo lectura, con Claude cerrado; no se abrió la misma base en paralelo.",
+              "checks": [
+                {
+                  "checkId": "http-transport",
+                  "command": "python scripts/check_http_transport.py",
+                  "cwd": ".",
+                  "status": "PASSED"
+                }
+              ],
+              "execution": "PASSED"
+            },
+            {
+              "id": "AC-03",
+              "status": "passed",
+              "method": "manual",
+              "kind": "interaction",
+              "observations": [
+                {
+                  "actor": "agent",
+                  "observer": "Codex revisión final de evidencia real",
+                  "sessionId": "3ab545a1-7a29-4101-bf06-19f5f0f75961",
+                  "surface": "Claude Desktop conversación de prueba",
+                  "environment": "Windows 11; Claude Desktop 5.11492.5 y Postman 12.34.0; cuentas ficticias",
+                  "steps": [
+                    "Ejecutar solicitud agrupada y continuación con aprobación humana",
+                    "Expandir respuestas originales de consignación, transferencia, rechazo y créditos",
+                    "Revisar captura final renderizada después de registrar sesión de revisión"
+                  ],
+                  "expected": "Evidencia auténtica y coherente con respuestas del servidor",
+                  "actual": "Consignación 10000, transferencia 5000, rechazo 999999999, créditos 100000 APPROVED y 10000001 PENDING; saldos 1155000 y 655000 COP.",
+                  "result": "passed",
+                  "observedAt": "2026-11-14T05:48:57.765654+00:00",
+                  "viewport": {
+                    "width": 1536,
+                    "height": 816
+                  },
+                  "artifact": "evidence/claude.png"
+                }
+              ],
+              "limits": "Revisión final de ejecuciones registradas en esta sesión; no se invocaron otra vez para revisar. No se midió la cuota restante."
+            },
+            {
+              "id": "AC-04",
+              "status": "passed",
+              "method": "manual",
+              "kind": "interaction",
+              "observations": [
+                {
+                  "actor": "agent",
+                  "observer": "Codex revisión final de evidencia real",
+                  "sessionId": "3ab545a1-7a29-4101-bf06-19f5f0f75961",
+                  "surface": "Postman MCP HTTP localhost",
+                  "environment": "Windows 11; Claude Desktop 5.11492.5 y Postman 12.34.0; cuentas ficticias",
+                  "steps": [
+                    "Conectar a 127.0.0.1:8080/mcp",
+                    "Ejecutar consultarSaldo y listarMovimientos",
+                    "Cerrar Claude y reiniciar HTTP sobre su base en modo de solo lectura",
+                    "Revisar captura final renderizada después de registrar sesión de revisión"
+                  ],
+                  "expected": "Evidencia auténtica y coherente con respuestas del servidor",
+                  "actual": "Saldo1001=1155000; historial conserva DEPOSIT10000, TRANSFER_OUT5000 y CREDIT_DISBURSEMENT100000.",
+                  "result": "passed",
+                  "observedAt": "2026-11-14T05:48:57.765654+00:00",
+                  "viewport": {
+                    "width": 1290,
+                    "height": 800
+                  },
+                  "artifact": "evidence/postman.png"
+                }
+              ],
+              "limits": "Solo consultas desde Postman; las escrituras se ejecutaron desde Claude. Revisión final de capturas de ejecución, no un nuevo envío HTTP."
+            },
+            {
+              "id": "AC-05",
+              "status": "passed",
+              "method": "automated",
+              "kind": "functional",
+              "checkIds": [
+                "delivery-artifacts"
+              ],
+              "exercises": "Apertura del PDF de siete páginas, imágenes por página, contenidos clave, colección de seis solicitudes de solo lectura y archivo de evidencia HTTP.",
+              "limits": "La estructura se comprueba automáticamente; la legibilidad y veracidad se revisaron manualmente. La colección no se ejecutó en Runner.",
+              "checks": [
+                {
+                  "checkId": "delivery-artifacts",
+                  "command": "python scripts/check_delivery_artifacts.py",
+                  "cwd": ".",
+                  "status": "PASSED"
+                }
+              ],
+              "execution": "PASSED"
+            }
+          ],
+          "scope": "DECLARED_EVIDENCE_WITH_EXECUTED_CHECK_BINDINGS",
+          "truthOfEvidence": "AGENT_OR_HUMAN_REVIEW_REQUIRED",
+          "automatedChecksPassed": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,389 @@
+{
+  "version": 1,
+  "files": {
+    "specs/_templates/01-feature/plan.md": {
+      "hash": "bdb6a32d578aa3fe6b109c75cf61abc9e17298d5777ea5be511a4cb0533288d4",
+      "section": false
+    },
+    "specs/_templates/01-feature/spec.md": {
+      "hash": "2082eb3a4db23ff56f7493aa1fdeecc5ada36e6dfc13e11715538b5161855b38",
+      "section": false
+    },
+    "specs/_templates/01-feature/tasks.md": {
+      "hash": "62f16f7b1d569f3965065a92a04a83bc0520f858362ca7d4a7f783e5c7016567",
+      "section": false
+    },
+    "specs/_templates/02-bugfix/bug.md": {
+      "hash": "a2b3c72397d61b9630c882644fcb02a919f839d498057c47a690ffe80c2cb3d5",
+      "section": false
+    },
+    "specs/_templates/02-bugfix/fix.md": {
+      "hash": "43ec599114bb19faf1cbb176e843d4b106a0396ad085c73185901fdc20f0f156",
+      "section": false
+    },
+    "specs/_templates/02-bugfix/rca.md": {
+      "hash": "ae20699f1731e045f4bfd36295646fc7ea65700320dc6f7425a5d2690cca23bb",
+      "section": false
+    },
+    "specs/_templates/03-tech-debt/audit.md": {
+      "hash": "1d81831ea86f6b3f17d2d99d00cd23bd359cb2222517e58433f4d6940b7207bc",
+      "section": false
+    },
+    "specs/_templates/03-tech-debt/migration-plan.md": {
+      "hash": "b657a5de2c1129137a56337cd74c297085a100121adc006bfd35458cb3be94f4",
+      "section": false
+    },
+    "specs/_templates/03-tech-debt/tasks.md": {
+      "hash": "f62983b106387bec5f29d7bbcaca202402509389aba7b02007388b19b799c14e",
+      "section": false
+    },
+    "specs/_templates/04-rfc-idea/rfc.md": {
+      "hash": "b24f6fb8310ee09964cbfa6677c1275f4ea741629471d51cdab5ca16ac206fbe",
+      "section": false
+    },
+    "specs/.omni/runtime/src/acceptance.mjs": {
+      "hash": "6c3690534a4f9f1801315bc255cc3c992ff9e634c4d85fd4d863019ff2a3ba14",
+      "section": false
+    },
+    "specs/.omni/runtime/src/assets.mjs": {
+      "hash": "7dabc4c2c5c9c7898b3fb79c039f849d06b9ebb164f9fabe6961d24383f384a5",
+      "section": false
+    },
+    "specs/.omni/runtime/src/auditor.mjs": {
+      "hash": "7ebd38a5aeb8e32111d498e93681d7a62fff063124d765906ca6a03cfc617d87",
+      "section": false
+    },
+    "specs/.omni/runtime/src/checks.mjs": {
+      "hash": "21f322a74f8ac94c0c98e5831f9631fb9a393531fe21c59b6d8a9a6e85478ca3",
+      "section": false
+    },
+    "specs/.omni/runtime/src/cli.mjs": {
+      "hash": "1efd1fe4260c8d378c4d59d47363e30ca79a1834533e1517ba6b2220c35f1321",
+      "section": false
+    },
+    "specs/.omni/runtime/src/context-auditor.mjs": {
+      "hash": "35b4736c06bd05a46b744cf9141be8f1b7f2c6dee3b2056d468aa9c326d57480",
+      "section": false
+    },
+    "specs/.omni/runtime/src/contracts.mjs": {
+      "hash": "9adec3bbc117cb8f1118fe93e2cf1d297f17b927c93521605349b3efa4f32115",
+      "section": false
+    },
+    "specs/.omni/runtime/src/detector.mjs": {
+      "hash": "5419aa6893f354fe52053272a1dcc19fa0ed9982e10c02575fa5de12e9ba2716",
+      "section": false
+    },
+    "specs/.omni/runtime/src/fit.mjs": {
+      "hash": "f55873282f71158f430503bdc17ac5006951cf4594053076da1457eea53cd65e",
+      "section": false
+    },
+    "specs/.omni/runtime/src/fs-retry.mjs": {
+      "hash": "b65580f34a68d2fd3114730ecb3d66876fdaaf66a8b19892445dbe254c9484cf",
+      "section": false
+    },
+    "specs/.omni/runtime/src/generator.mjs": {
+      "hash": "82603879b42f4662964bf9867ddc1cb6293e7b4e6c6aebd3a436bf644ee4285f",
+      "section": false
+    },
+    "specs/.omni/runtime/src/installation.mjs": {
+      "hash": "10ac9864fbd97bc61fed9b1da39684c3178fbb8e3b78cae9ad2c19b23daaf3e3",
+      "section": false
+    },
+    "specs/.omni/runtime/src/integrations.mjs": {
+      "hash": "069407f67a109a9a4717a8ce00f5cd188c0c5dadd90ebf0bc70e4932f37a88a4",
+      "section": false
+    },
+    "specs/.omni/runtime/src/managed.mjs": {
+      "hash": "d89c59b96c861e27249eb515d2f3364aaca2993f12e91544397ddf74d7627a30",
+      "section": false
+    },
+    "specs/.omni/runtime/src/manifest.mjs": {
+      "hash": "488d4ee48c727e946607f97f961af91ada91f221571f1bc1a1492b726aefa24b",
+      "section": false
+    },
+    "specs/.omni/runtime/src/plugin-manager.mjs": {
+      "hash": "db98a968fcd94e08f3b729a3f41dbd0b6272aa116725805cf40c85127cefcd07",
+      "section": false
+    },
+    "specs/.omni/runtime/src/profiles/bpo.mjs": {
+      "hash": "872bc488264fb5270b7cd5d4bb5ecd8c4e3701adc8ef925543d740ca7267acbf",
+      "section": false
+    },
+    "specs/.omni/runtime/src/profiles/ecommerce.mjs": {
+      "hash": "75b93487ee8a39e21f3a371f683f4608c3bc93ac8ea69af2326d6650d1704b20",
+      "section": false
+    },
+    "specs/.omni/runtime/src/profiles/fintech.mjs": {
+      "hash": "d688ba65aa9d6e5797f5f9c42eed2414f61f7b3800bb84d2a642a3df5db1db28",
+      "section": false
+    },
+    "specs/.omni/runtime/src/profiles/general.mjs": {
+      "hash": "64ac281e16274d15aa9df9b97066cc99a7547d6e65fc8797cc16c1e241b8393c",
+      "section": false
+    },
+    "specs/.omni/runtime/src/profiles/healthtech.mjs": {
+      "hash": "775d681cf10a1ae9f444c6947b6080cb6b6b416e3888a8094db73529f0e548eb",
+      "section": false
+    },
+    "specs/.omni/runtime/src/profiles/index.mjs": {
+      "hash": "fd2797de176049087d16c1c78ce8cb631703e17f73f221ee916211931d82cb4f",
+      "section": false
+    },
+    "specs/.omni/runtime/src/project-state.mjs": {
+      "hash": "fc95e714c4122513118b3dfd28ea94229f696a7433a7f78a0d9c6cb939dd4cd2",
+      "section": false
+    },
+    "specs/.omni/runtime/src/protocols.mjs": {
+      "hash": "81a03dc54ee700729fa87529eb3fe4be3d70e5ea30b737dc577fbf7be36ba105",
+      "section": false
+    },
+    "specs/.omni/runtime/src/resources/design.md": {
+      "hash": "935765230341bf342c5a54a537b968df45a2acbacd2ff050c1a3139c586237b6",
+      "section": false
+    },
+    "specs/.omni/runtime/src/resources/evidence.md": {
+      "hash": "f8c91e921da774899c8f65bdbf1ab87c3011c0faa7e471b619225ad5b97c00a3",
+      "section": false
+    },
+    "specs/.omni/runtime/src/resources/setup.md": {
+      "hash": "b507c776a03e7dd97cf63d805843e3efb61a20cf8b13cb9e485c05044731bb2c",
+      "section": false
+    },
+    "specs/.omni/runtime/src/snapshot.mjs": {
+      "hash": "ae785ea57503a7b0fc00ead9cad10413194a212b96fbf8d68bfc9a7d8adc5390",
+      "section": false
+    },
+    "specs/.omni/runtime/src/templates/01-feature/plan.md": {
+      "hash": "bdb6a32d578aa3fe6b109c75cf61abc9e17298d5777ea5be511a4cb0533288d4",
+      "section": false
+    },
+    "specs/.omni/runtime/src/templates/01-feature/spec.md": {
+      "hash": "2082eb3a4db23ff56f7493aa1fdeecc5ada36e6dfc13e11715538b5161855b38",
+      "section": false
+    },
+    "specs/.omni/runtime/src/templates/01-feature/tasks.md": {
+      "hash": "62f16f7b1d569f3965065a92a04a83bc0520f858362ca7d4a7f783e5c7016567",
+      "section": false
+    },
+    "specs/.omni/runtime/src/templates/02-bugfix/bug.md": {
+      "hash": "a2b3c72397d61b9630c882644fcb02a919f839d498057c47a690ffe80c2cb3d5",
+      "section": false
+    },
+    "specs/.omni/runtime/src/templates/02-bugfix/fix.md": {
+      "hash": "43ec599114bb19faf1cbb176e843d4b106a0396ad085c73185901fdc20f0f156",
+      "section": false
+    },
+    "specs/.omni/runtime/src/templates/02-bugfix/rca.md": {
+      "hash": "ae20699f1731e045f4bfd36295646fc7ea65700320dc6f7425a5d2690cca23bb",
+      "section": false
+    },
+    "specs/.omni/runtime/src/templates/03-tech-debt/audit.md": {
+      "hash": "1d81831ea86f6b3f17d2d99d00cd23bd359cb2222517e58433f4d6940b7207bc",
+      "section": false
+    },
+    "specs/.omni/runtime/src/templates/03-tech-debt/migration-plan.md": {
+      "hash": "b657a5de2c1129137a56337cd74c297085a100121adc006bfd35458cb3be94f4",
+      "section": false
+    },
+    "specs/.omni/runtime/src/templates/03-tech-debt/tasks.md": {
+      "hash": "f62983b106387bec5f29d7bbcaca202402509389aba7b02007388b19b799c14e",
+      "section": false
+    },
+    "specs/.omni/runtime/src/templates/04-rfc-idea/rfc.md": {
+      "hash": "b24f6fb8310ee09964cbfa6677c1275f4ea741629471d51cdab5ca16ac206fbe",
+      "section": false
+    },
+    "specs/.omni/runtime/src/terminal-ui.mjs": {
+      "hash": "53de30f125e65224d417fd26d941270fc2e5946b412f3af5e2c789d0a5b22c4b",
+      "section": false
+    },
+    "specs/.omni/runtime/src/updater.mjs": {
+      "hash": "d9fda27d628b4944815d17b7250516062d0dd59a23d3b3fd715e336ebbcdc9e0",
+      "section": false
+    },
+    "specs/.omni/runtime/src/verification.mjs": {
+      "hash": "0250caf91e720ec171367e1764e1c577877e3293fca0023faf8cde240561c457",
+      "section": false
+    },
+    "specs/.omni/runtime/src/versions.mjs": {
+      "hash": "da01722d3f37e6b91ae97b731b8ba63adc0896bd0fdf9fcae1414ca3506c365e",
+      "section": false
+    },
+    "specs/.omni/runtime/src/wizard.mjs": {
+      "hash": "e77f8a5df0854fc5581b6caae49f58fdb32e066c87a31db4ed5025dbb7f33452",
+      "section": false
+    },
+    "specs/.omni/runtime/src/workflows.mjs": {
+      "hash": "71a59a27e29a2092a1b52c2f4c696374c68972fba1cd15d6b57d56c3b7cc71e9",
+      "section": false
+    },
+    "specs/.omni/runtime/bin/omni-spec.mjs": {
+      "hash": "7d2d8b82b5ffb8e7404ba6a1cd6178bd2c34a69c9cb572d46744325658a5322d",
+      "section": false
+    },
+    "specs/.omni/runtime/schema/acceptance.schema.json": {
+      "hash": "f9eaa923ff9d23a2ce5eb18515fc105afe421cb3620d2e25fe1c7ed7cc8ac4be",
+      "section": false
+    },
+    "specs/.omni/runtime/schema/checks.schema.json": {
+      "hash": "aaa461fead24c9d058bb014936c7306e33be8a59d44ccdf7bd91c75f5e202a3b",
+      "section": false
+    },
+    "specs/.omni/runtime/schema/contracts.schema.json": {
+      "hash": "2b95ddb417287f86e7c66278483ba5ed9668cdf3bd4b3667f8276237005c85f3",
+      "section": false
+    },
+    "specs/.omni/runtime/schema/fit.schema.json": {
+      "hash": "cc0ee247cd52415a89ad69f699e57a9acf0a34860b3dc012b8ce417e509b8972",
+      "section": false
+    },
+    "specs/.omni/runtime/schema/manifest.schema.json": {
+      "hash": "cc63fdce742caf84c66a1589f0db9dc6c5ad54cffb8e593662016f550d481efc",
+      "section": false
+    },
+    "specs/.omni/runtime/schema/project-state.schema.json": {
+      "hash": "7449ac53236b0cbf3115c5b0c87410fcf91e67945f093543c1654259c49630e9",
+      "section": false
+    },
+    "specs/.omni/runtime/agents/omni-auditor.md": {
+      "hash": "100b1a9ab89c582f819d3df8279196cd46535c06d738d3221bd3359672bdf793",
+      "section": false
+    },
+    "specs/.omni/runtime/package.json": {
+      "hash": "84c09c2c63635cea626dd94ca90e9c1c150bd5c20bfb1e072e32b58bdfa4a23f",
+      "section": false
+    },
+    "specs/.omni/runtime/LICENSE": {
+      "hash": "0751828e352fb04f36c7a6ca29708f1e1aeaaed5495f5b09d39a39ee1614a106",
+      "section": false
+    },
+    "specs/.gitignore": {
+      "hash": "5882fdecb0a909ace717e8183de327f257c744e4cb8825fb969857c898caac85",
+      "section": "hash"
+    },
+    ".agents/skills/omni-init/SKILL.md": {
+      "hash": "4c8b5e3194e9cf245d8c49df52e141d74d28aa02d55e098a718b350f9b5f860e",
+      "section": false
+    },
+    ".agents/skills/omni-discuss/SKILL.md": {
+      "hash": "28d8fe8c4a6c966f63e2be160b75b63083f052b30e1d8e6d5cf2cf627e1da9e5",
+      "section": false
+    },
+    ".agents/skills/omni-specify/SKILL.md": {
+      "hash": "cdad375d7d4d6215a024c5e0a78e4163e822ee7cf6acddd1f288c6cdde599181",
+      "section": false
+    },
+    ".agents/skills/omni-clarify/SKILL.md": {
+      "hash": "cd6da8686756426cfc424f88f149d5d1ba7e85bde2c19935e08fa4cb976b7b01",
+      "section": false
+    },
+    ".agents/skills/omni-plan/SKILL.md": {
+      "hash": "59ec5864a58c8b292431eedad10574f3bc261db7445c18f3c6210db59df0ef22",
+      "section": false
+    },
+    ".agents/skills/omni-tasks/SKILL.md": {
+      "hash": "4e3bbe58fb1438f6fd7e1645e1777d30be3a5f0529f747488d267caad37cea31",
+      "section": false
+    },
+    ".agents/skills/omni-audit/SKILL.md": {
+      "hash": "96f41eb0e623bb8162d17cd0c1ad1c101017b6c967a38644c4fde5a0ba8511e0",
+      "section": false
+    },
+    ".agents/skills/omni-implement/SKILL.md": {
+      "hash": "b6d08cb5c9541273cbffa79049c0abe39bd2343d825abe47dd45bf3f64e77c99",
+      "section": false
+    },
+    ".agents/skills/omni-converge/SKILL.md": {
+      "hash": "9aa3f1dbd5cf3d7227a57131e90c8a77a99fcab598d2def4a2da4cb951523f48",
+      "section": false
+    },
+    "AGENTS.md": {
+      "hash": "b1a1f7b39ac21391c82a81a4247cb3cbdf083bc3ee2b43067b5f509c44bd6dd9",
+      "section": true
+    },
+    "specs/commands/omni-init.md": {
+      "hash": "2b71704ba67788f2560e698c041b2f160b8d992b87669bdde0c864b46a55aa18",
+      "section": false
+    },
+    "specs/.omni/runtime/src/attestation.mjs": {
+      "hash": "f1ccd95525d90ab49925f4e123a934426eb44fc597d5bdf4f5a83e802efd44c7",
+      "section": false
+    },
+    "specs/.omni/runtime/src/auth.mjs": {
+      "hash": "e8a8f77934f1c57d1ab84231e545bbdb71b32175c1d7ffccd1374c82912a686a",
+      "section": false
+    },
+    "specs/.omni/runtime/src/cartography/blast-radius.mjs": {
+      "hash": "503961bd6d5573cd1a34856a5f1fec1449681b9f7b5a7281f26e501a28ec672f",
+      "section": false
+    },
+    "specs/.omni/runtime/src/cartography/files.mjs": {
+      "hash": "03c099735fbf98d86e6dadc3fd220d0744258b3d6d74715bc754a93b80b9be6b",
+      "section": false
+    },
+    "specs/.omni/runtime/src/cartography/graph.mjs": {
+      "hash": "51d977ab4f58e760d92706e6c4aa28612fe105410616af2b51868e6838f84a2e",
+      "section": false
+    },
+    "specs/.omni/runtime/src/cartography/lexer.mjs": {
+      "hash": "0bb1d0406072bec5c9e36a66c58eb0508ff237fd70a05a2f7592e0365f538056",
+      "section": false
+    },
+    "specs/.omni/runtime/src/cartography/resolver.mjs": {
+      "hash": "0e20002a7ac1688f2e00c8bf0ac5e904611a88d6dc98fd81f21201ad9762b24f",
+      "section": false
+    },
+    "specs/.omni/runtime/src/circuit-breaker.mjs": {
+      "hash": "10d757cf100992a2af06eccae42280f7c108288e8fd9cbceba86eeb2a5efc2b8",
+      "section": false
+    },
+    "specs/.omni/runtime/src/gates.mjs": {
+      "hash": "aa892a314a5d6dc96c56270589dae05be130cc77cd349a26d836b48817a92ed7",
+      "section": false
+    },
+    "specs/.omni/runtime/src/guardian.mjs": {
+      "hash": "cc0e31200276607197227fd1bfbe424c6b51ac5c02b2340d2bacd809f124c997",
+      "section": false
+    },
+    "specs/.omni/runtime/src/hollow-guard.mjs": {
+      "hash": "523b93d437ffa51bbca6549d4bfcc45dad9b5cc38fe9856ef5fac0624e259b78",
+      "section": false
+    },
+    "specs/.omni/runtime/src/js-lexer.mjs": {
+      "hash": "b2bdd0c5d366bdc6af76fae4abd53bf9ede742a73f3593436bdeff040c921fa7",
+      "section": false
+    },
+    "specs/.omni/runtime/src/mcp-server.mjs": {
+      "hash": "38947438e16489a749c63bb5146d8eb1d2100822d7855ebb39dac686bf49b0ee",
+      "section": false
+    },
+    "specs/.omni/runtime/src/memory.mjs": {
+      "hash": "f0c721bc068c4fceb22520e7283d03d36fb2a4fdfbf3076f7568826d5ff68b28",
+      "section": false
+    },
+    "specs/.omni/runtime/src/secure-store.mjs": {
+      "hash": "99e73c0f520556039b032c4eddc02f9ff240d48ed5e178aa5bec72065e3c9cd9",
+      "section": false
+    },
+    "specs/.omni/runtime/src/tasks.mjs": {
+      "hash": "d7e1d15fa88f48db5990306da897058edccad6436b0d59d80edd8c018968976b",
+      "section": false
+    },
+    "specs/.omni/runtime/src/version-claims.mjs": {
+      "hash": "70c2f7c6f39ac353573935091999e40ae812c4dd5b1be4cb8d679e3edde1891c",
+      "section": false
+    },
+    "specs/.omni/runtime/src/workspace.mjs": {
+      "hash": "de34bb5efb6b6be2eab114c7a710812ead07890d584d8e1445d62c0e7c1dc1ce",
+      "section": false
+    },
+    "specs/.omni/runtime/schema/tasks.schema.json": {
+      "hash": "2deca0b9b79e5b6fd14a82ec15e23910f9bcd3774662a9cd0d75964965581c5a",
+      "section": false
+    },
+    "specs/.omni/reference/CONSTITUTION.md": {
+      "hash": "ba3c74fb88b36a6c69e9b750f1f4d3f9e85a4ac8fb9dfe0ad914b33e3024da9e",
+      "section": false
+    }
+  }
+}

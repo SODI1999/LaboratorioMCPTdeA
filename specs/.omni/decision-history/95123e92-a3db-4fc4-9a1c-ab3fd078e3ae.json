@@ -1,0 +1,18 @@
+{
+  "id": "stack-backend-mcp",
+  "topic": "technology",
+  "status": "approved",
+  "value": "Java 25 (LTS), Spring Boot 3.5.3, Spring AI 1.0.0 (spring-ai-starter-mcp-server), H2 Database (Spring Data JPA), Javadoc, Conventional Commits 1.0.0",
+  "basis": "Requisitos declarados en la Guía de Laboratorio TdeA 2026 (pags. 4-5, 13) y acordados con el usuario en la sesión de discusión.",
+  "required": true,
+  "sources": [
+    {
+      "url": "https://spring.io/projects/spring-ai",
+      "consultedAt": "2026-11-01T07:18:00.000Z",
+      "appliesTo": "Spring AI MCP Server Starter",
+      "authority": "official"
+    }
+  ],
+  "recordedAt": "2026-11-01T07:19:05.636Z",
+  "revision": 1
+}

@@ -1,0 +1,16 @@
+{
+  "recordedAt": "2026-11-01T08:26:18.635Z",
+  "scope": "CONTEXT_INPUTS_V3",
+  "inputs": {
+    "AGENTS.md": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CLAUDE.md": "ca07c1712e4cd6ee2d318d1789ef215c9357c4478b02a8d22da63717d35e5b1a",
+    "CONSTITUTION.md": "0557fe6c4d66952f823b9d98d3ed165461d63a28d094567652f02970bb2e2a37",
+    "Guia-LaboratorioMCPTDEA.pdf": "603c632edc38b1207a09b7b874e905b3f70fcaf075c7ae4b349e3ad6d648242a",
+    "pom.xml": "5257d7e517ce5937b8fef14a48c102e16908507fec6834c22951de7a76c94bc9",
+    "src/main/java/com/tdea/mcp_bank_tdea/McpBankTdeaApplication.java": "3f60486ad4f606b39a15f6e6547e19a5031d0195a189df28d13f1df22e75653b",
+    "src/main/resources/application.properties": "2c53759f7157a446495396e6e8c55807a724eb52ee40b96c2946d19166580f85",
+    "specs/project-context.md": "67ddf8e9312bffa9962c2200ce4d6ba6c87ba106467f3c12465f70b2a5ea1d4a"
+  },
+  "reviewScope": "EOL_NORMALIZED_BASELINE_AND_STRUCTURAL_LINKS_ONLY",
+  "semanticReview": "AGENT_OR_HUMAN_REQUIRED"
+}

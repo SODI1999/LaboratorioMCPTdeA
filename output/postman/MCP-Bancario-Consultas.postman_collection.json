@@ -1,0 +1,287 @@
+{
+  "info": {
+    "name": "MCP Bancario TdeA Consultas",
+    "description": "Ejecutar en orden contra el servidor HTTP. Solo consultas: no consigna, transfiere ni solicita créditos. Las respuestas pueden usar SSE.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "mcpUrl",
+      "value": "http://127.0.0.1:8080/mcp"
+    },
+    {
+      "key": "mcpSessionId",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "01 Inicializar sesión MCP",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json, text/event-stream"
+          }
+        ],
+        "url": "{{mcpUrl}}",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"initialize\",\n  \"params\": {\n    \"protocolVersion\": \"2025-11-25\",\n    \"capabilities\": {},\n    \"clientInfo\": {\n      \"name\": \"postman-laboratorio\",\n      \"version\": \"1.0\"\n    }\n  },\n  \"id\": 1\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Respuesta HTTP MCP válida\", () => pm.expect([200,202]).to.include(pm.response.code));",
+              "pm.collectionVariables.set(\"mcpSessionId\", pm.response.headers.get(\"Mcp-Session-Id\"));",
+              "pm.test(\"Servidor bancario\", () => pm.expect(pm.response.json().result.serverInfo.name).to.eql(\"bank-mcp-server\"));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "02 Notificar inicialización",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json, text/event-stream"
+          },
+          {
+            "key": "Mcp-Session-Id",
+            "value": "{{mcpSessionId}}"
+          },
+          {
+            "key": "MCP-Protocol-Version",
+            "value": "2025-11-25"
+          }
+        ],
+        "url": "{{mcpUrl}}",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"notifications/initialized\",\n  \"params\": {}\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Respuesta HTTP MCP válida\", () => pm.expect([200,202]).to.include(pm.response.code));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "03 Descubrir herramientas",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json, text/event-stream"
+          },
+          {
+            "key": "Mcp-Session-Id",
+            "value": "{{mcpSessionId}}"
+          },
+          {
+            "key": "MCP-Protocol-Version",
+            "value": "2025-11-25"
+          }
+        ],
+        "url": "{{mcpUrl}}",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"tools/list\",\n  \"params\": {},\n  \"id\": 3\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Respuesta HTTP MCP válida\", () => pm.expect([200,202]).to.include(pm.response.code));",
+              "const raw = pm.response.text();",
+              "const body = raw.trim().startsWith(\"{\") ? JSON.parse(raw) : JSON.parse(raw.split(/\\r?\\n/).find(line => line.startsWith(\"data:\")).slice(5).trim());",
+              "pm.test(\"Cinco herramientas\", () => pm.expect(body.result.tools).to.have.lengthOf(5));",
+              "pm.test(\"Saldo descubierto\", () => pm.expect(body.result.tools.map(t => t.name)).to.include(\"consultarSaldo\"));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "04 Consultar saldo 1001",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json, text/event-stream"
+          },
+          {
+            "key": "Mcp-Session-Id",
+            "value": "{{mcpSessionId}}"
+          },
+          {
+            "key": "MCP-Protocol-Version",
+            "value": "2025-11-25"
+          }
+        ],
+        "url": "{{mcpUrl}}",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"consultarSaldo\",\n    \"arguments\": {\n      \"numeroCuenta\": \"1001\"\n    }\n  },\n  \"id\": 4\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Respuesta HTTP MCP válida\", () => pm.expect([200,202]).to.include(pm.response.code));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "05 Consultar saldo 1002",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json, text/event-stream"
+          },
+          {
+            "key": "Mcp-Session-Id",
+            "value": "{{mcpSessionId}}"
+          },
+          {
+            "key": "MCP-Protocol-Version",
+            "value": "2025-11-25"
+          }
+        ],
+        "url": "{{mcpUrl}}",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"consultarSaldo\",\n    \"arguments\": {\n      \"numeroCuenta\": \"1002\"\n    }\n  },\n  \"id\": 5\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Respuesta HTTP MCP válida\", () => pm.expect([200,202]).to.include(pm.response.code));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "06 Consultar movimientos 1001",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json, text/event-stream"
+          },
+          {
+            "key": "Mcp-Session-Id",
+            "value": "{{mcpSessionId}}"
+          },
+          {
+            "key": "MCP-Protocol-Version",
+            "value": "2025-11-25"
+          }
+        ],
+        "url": "{{mcpUrl}}",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"listarMovimientos\",\n    \"arguments\": {\n      \"numeroCuenta\": \"1001\"\n    }\n  },\n  \"id\": 6\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Respuesta HTTP MCP válida\", () => pm.expect([200,202]).to.include(pm.response.code));"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

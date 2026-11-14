@@ -1,0 +1,36 @@
+{
+  "spec": "002-pruebas-reales-entregable",
+  "completed": true,
+  "verifiedAt": "2026-11-14T05:52:18.161Z",
+  "checks": [
+    {
+      "id": "test",
+      "command": "node scripts/maven-check.mjs test",
+      "exitCode": 0,
+      "startedAt": "2026-11-14T05:51:34.474Z",
+      "finishedAt": "2026-11-14T05:51:47.994Z"
+    },
+    {
+      "id": "package",
+      "command": "node scripts/maven-check.mjs package",
+      "exitCode": 0,
+      "startedAt": "2026-11-14T05:51:47.996Z",
+      "finishedAt": "2026-11-14T05:52:04.171Z"
+    },
+    {
+      "id": "http-transport",
+      "command": "python scripts/check_http_transport.py",
+      "exitCode": 0,
+      "startedAt": "2026-11-14T05:52:04.179Z",
+      "finishedAt": "2026-11-14T05:52:17.828Z"
+    },
+    {
+      "id": "delivery-artifacts",
+      "command": "python scripts/check_delivery_artifacts.py",
+      "exitCode": 0,
+      "startedAt": "2026-11-14T05:52:17.836Z",
+      "finishedAt": "2026-11-14T05:52:18.103Z"
+    }
+  ],
+  "limits": "Las observaciones UI y la revisión visual se documentan aparte; no se hicieron pruebas de carga ni Inspector."
+}

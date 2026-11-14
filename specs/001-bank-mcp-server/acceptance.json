@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 2,
+  "criteria": [
+    {
+      "id": "AC-01",
+      "kind": "functional",
+      "status": "passed",
+      "method": "automated",
+      "checkIds": [
+        "test"
+      ],
+      "evidence": "BankServiceTest.testConsultarSaldo_CuentaExistente valida titular, estado y saldo disponible."
+    },
+    {
+      "id": "AC-02",
+      "kind": "functional",
+      "status": "passed",
+      "method": "automated",
+      "checkIds": [
+        "test"
+      ],
+      "evidence": "BankServiceTest.testConsignarDinero_Exitoso valida abono de saldo y registro inmutable en tabla transactions."
+    },
+    {
+      "id": "AC-03",
+      "kind": "functional",
+      "status": "passed",
+      "method": "automated",
+      "checkIds": [
+        "test"
+      ],
+      "evidence": "BankServiceTest.testTransferirDinero_Exitoso valida atomicidad transaccional: débito origen, crédito destino y auditoría."
+    },
+    {
+      "id": "AC-04",
+      "kind": "functional",
+      "status": "passed",
+      "method": "automated",
+      "checkIds": [
+        "test"
+      ],
+      "evidence": "BankServiceTest valida rechazo por saldo insuficiente, cuenta inexistente o monto negativo sin alterar balances."
+    },
+    {
+      "id": "AC-05",
+      "kind": "functional",
+      "status": "passed",
+      "method": "automated",
+      "checkIds": [
+        "test"
+      ],
+      "evidence": "BankServiceTest valida aprobación y desembolso si <= 10.000.000 COP y radicación PENDING si supera el cupo automático."
+    },
+    {
+      "id": "AC-06",
+      "kind": "functional",
+      "status": "passed",
+      "method": "automated",
+      "checkIds": [
+        "test"
+      ],
+      "evidence": "BankServiceTest.testListarMovimientos valida consulta cronológica de transacciones asociadas a la cuenta."
+    },
+    {
+      "id": "AC-07",
+      "kind": "functional",
+      "status": "passed",
+      "method": "automated",
+      "checkIds": [
+        "test"
+      ],
+      "evidence": "DataInitializer precarga cuentas 1001, 1002 y 1003 en H2 al inicio, verificado en BankServiceTest y contextLoads."
+    },
+    {
+      "id": "AC-08",
+      "kind": "functional",
+      "status": "passed",
+      "method": "automated",
+      "checkIds": [
+        "package"
+      ],
+      "evidence": "mvnw clean package empaqueta JAR ejecutable autónomo target/mcp-bank-tdea-0.0.1-SNAPSHOT.jar con transporte Stdio."
+    }
+  ]
+}

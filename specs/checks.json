@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "checks": [
+    {
+      "id": "test",
+      "command": "node scripts/maven-check.mjs test",
+      "cwd": "."
+    },
+    {
+      "id": "package",
+      "command": "node scripts/maven-check.mjs package",
+      "cwd": "."
+    },
+    {
+      "id": "http-transport",
+      "command": "python scripts/check_http_transport.py",
+      "cwd": ".",
+      "timeoutMs": 120000
+    },
+    {
+      "id": "delivery-artifacts",
+      "command": "python scripts/check_delivery_artifacts.py",
+      "cwd": "."
+    }
+  ]
+}
+

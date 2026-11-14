@@ -1,0 +1,80 @@
+{
+  "date": "2026-11-14",
+  "files": [
+    {
+      "file": "21-usuario-postman-historial-json.png",
+      "bytes": 300015,
+      "sha256": "80a2cf02627ad2225dba226a2c0ffca80e4cf06cb8c4a085d2b329824d22df99"
+    },
+    {
+      "file": "22-usuario-postman-historial-preview.png",
+      "bytes": 324518,
+      "sha256": "32a7f8d1e444f31c4559cc68a3f23cf6eb4331cf49fb5363b5b49a517f592593"
+    },
+    {
+      "file": "23-usuario-postman-saldo-preview.png",
+      "bytes": 267772,
+      "sha256": "d05507c4f7ea6f5c8527624c6c8e30899a7e433541af80b011e834a3b84e717c"
+    },
+    {
+      "file": "24-usuario-postman-saldo-json.png",
+      "bytes": 270945,
+      "sha256": "8cf7a58b2edb1ec7da89decd901556169cacea9d7be025746a81eef90473176c"
+    },
+    {
+      "file": "25-usuario-claude-resultados.png",
+      "bytes": 113925,
+      "sha256": "8ee848e5b1c303f5e2d55146aa09f4ab7fdc1d622b052861c5b52f99e1497adb"
+    },
+    {
+      "file": "26-usuario-claude-herramientas.png",
+      "bytes": 99201,
+      "sha256": "e43317fcd18df5b578ddd66c3aaa97cae59690c06f288e36f62ac434f80b5b62"
+    },
+    {
+      "file": "27-usuario-claude-servidor.png",
+      "bytes": 155929,
+      "sha256": "53eb78bb4273d09e223a9afe0e841e48bf85020eadfbf8b593671c043c91aca9"
+    },
+    {
+      "file": "claude-transcripcion.txt",
+      "bytes": 4172,
+      "sha256": "cc4982d991ab3f0914b00c8c6cd2ce25cbf0e5c0c5f90a55d5c7b02983521783"
+    },
+    {
+      "file": "claude-consignacion.txt",
+      "bytes": 4581,
+      "sha256": "8e25aa4aa16876c5b7ecd3393c9f9ab080e41b2276cde98d3351085fd0125151"
+    },
+    {
+      "file": "claude-creditos.txt",
+      "bytes": 5622,
+      "sha256": "733c38bafe50caf804b3b59c801e1a36cae4f330703f77c058fbf0b25a4c2c30"
+    },
+    {
+      "file": "claude-transferencias.txt",
+      "bytes": 4895,
+      "sha256": "81dc88290497cc09024b1b4d7ea21a43a132356c1f6d09d6c0494d3af4d1944b"
+    },
+    {
+      "file": "http-verificacion.json",
+      "bytes": 9765,
+      "sha256": "a1c473846f5229bb39bf4b1628171dcd7848f0b10401209e433822389dac6146"
+    },
+    {
+      "file": "resumen-verificacion-final.json",
+      "bytes": 1141,
+      "sha256": "ce4c5d9e1957be1c77b8c970535e3d56ad827a9d72808befacc08faccb115d10"
+    },
+    {
+      "file": "com.tdea.mcp_bank_tdea.BankServiceTest.txt",
+      "bytes": 331,
+      "sha256": "1a77dfc5e22915f80261e311265be799e958e218b9852954c446f59c475502b4"
+    },
+    {
+      "file": "com.tdea.mcp_bank_tdea.McpBankTdeaApplicationTests.txt",
+      "bytes": 354,
+      "sha256": "cfccfd4d9dabe068e6a33f83e7481934b9be1f0dccd943164c9ecb12dc6b71e4"
+    }
+  ]
+}

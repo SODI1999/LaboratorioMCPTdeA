@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.tdea.mcp_bank_tdea.BankServiceTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.118 s -- in com.tdea.mcp_bank_tdea.BankServiceTest

@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "bank-mcp-server": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "<RUTA_ABSOLUTA_PROYECTO>/target/mcp-bank-tdea-0.0.1-SNAPSHOT.jar",
+        "--spring.datasource.url=jdbc:h2:file:<RUTA_ABSOLUTA_PROYECTO>/data/bankdb;DB_CLOSE_ON_EXIT=FALSE",
+        "--logging.file.name=<RUTA_ABSOLUTA_PROYECTO>/target/mcp-bank-claude.log"
+      ]
+    }
+  }
+}

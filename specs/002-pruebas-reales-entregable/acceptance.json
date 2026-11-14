@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "criteria": [
+    {
+      "id": "AC-01",
+      "kind": "functional",
+      "status": "passed",
+      "method": "automated",
+      "checkIds": [
+        "test",
+        "package"
+      ],
+      "evidence": "La suite de servicio real/H2 pasó 11 pruebas; el JAR predeterminado se empaqueta y se observó desde Claude. Los gates finales se ligan al resultado de verify.",
+      "exercises": "SpringBootTest real con JPA/H2 en memoria; empaquetado ejecutable Spring Boot.",
+      "limits": "Los gates Maven no sustituyen la invocación MCP observada ni prueban concurrencia."
+    },
+    {
+      "id": "AC-02",
+      "kind": "functional",
+      "status": "passed",
+      "method": "automated",
+      "evidence": "Build HTTP ejecutado exitosamente; Postman conectó por HTTP; evidence/http-verificacion.json contiene inicialización y catálogo reales. Perfil por defecto usa bankdb-http separado y loopback.",
+      "limits": "La persistencia se verificó adicionalmente sobre bankdb en modo de solo lectura, con Claude cerrado; no se abrió la misma base en paralelo.",
+      "checkIds": [
+        "http-transport"
+      ],
+      "exercises": "Build HTTP y proceso Java con H2 en memoria; initialize, initialized, tools/list, dos saldos e historial reales por loopback."
+    },
+    {
+      "id": "AC-03",
+      "kind": "interaction",
+      "status": "passed",
+      "method": "manual",
+      "evidence": "Cinco herramientas reales en Claude; solicitudes y respuestas originales revisadas; usuario aprobó permisos. Dos mensajes, incluida continuación tras interrupción.",
+      "limits": "Revisión final de ejecuciones registradas en esta sesión; no se invocaron otra vez para revisar. No se midió la cuota restante.",
+      "observations": [
+        {
+          "actor": "agent",
+          "observer": "Codex revisión final de evidencia real",
+          "sessionId": "3ab545a1-7a29-4101-bf06-19f5f0f75961",
+          "surface": "Claude Desktop conversación de prueba",
+          "environment": "Windows 11; Claude Desktop 5.11492.5 y Postman 12.34.0; cuentas ficticias",
+          "steps": [
+            "Ejecutar solicitud agrupada y continuación con aprobación humana",
+            "Expandir respuestas originales de consignación, transferencia, rechazo y créditos",
+            "Revisar captura final renderizada después de registrar sesión de revisión"
+          ],
+          "expected": "Evidencia auténtica y coherente con respuestas del servidor",
+          "actual": "Consignación 10000, transferencia 5000, rechazo 999999999, créditos 100000 APPROVED y 10000001 PENDING; saldos 1155000 y 655000 COP.",
+          "result": "passed",
+          "observedAt": "2026-11-14T05:48:57.765654+00:00",
+          "viewport": {
+            "width": 1536,
+            "height": 816
+          },
+          "artifact": "evidence/claude.png"
+        }
+      ]
+    },
+    {
+      "id": "AC-04",
+      "kind": "interaction",
+      "status": "passed",
+      "method": "manual",
+      "evidence": "Postman conectó mediante Streamable HTTP, descubrió cinco herramientas y ejecutó consultarSaldo/listarMovimientos. El nuevo proceso leyó los datos previamente guardados por Claude.",
+      "limits": "Solo consultas desde Postman; las escrituras se ejecutaron desde Claude. Revisión final de capturas de ejecución, no un nuevo envío HTTP.",
+      "observations": [
+        {
+          "actor": "agent",
+          "observer": "Codex revisión final de evidencia real",
+          "sessionId": "3ab545a1-7a29-4101-bf06-19f5f0f75961",
+          "surface": "Postman MCP HTTP localhost",
+          "environment": "Windows 11; Claude Desktop 5.11492.5 y Postman 12.34.0; cuentas ficticias",
+          "steps": [
+            "Conectar a 127.0.0.1:8080/mcp",
+            "Ejecutar consultarSaldo y listarMovimientos",
+            "Cerrar Claude y reiniciar HTTP sobre su base en modo de solo lectura",
+            "Revisar captura final renderizada después de registrar sesión de revisión"
+          ],
+          "expected": "Evidencia auténtica y coherente con respuestas del servidor",
+          "actual": "Saldo1001=1155000; historial conserva DEPOSIT10000, TRANSFER_OUT5000 y CREDIT_DISBURSEMENT100000.",
+          "result": "passed",
+          "observedAt": "2026-11-14T05:48:57.765654+00:00",
+          "viewport": {
+            "width": 1290,
+            "height": 800
+          },
+          "artifact": "evidence/postman.png"
+        }
+      ]
+    },
+    {
+      "id": "AC-05",
+      "kind": "functional",
+      "status": "passed",
+      "method": "automated",
+      "evidence": "PDF de siete páginas renderizado y revisado íntegramente; incluye alcance, capturas, resultados, reproducción y limitaciones. evidence/informe.pdf conserva copia revisada. Colección de consultas y README presentes.",
+      "limits": "La estructura se comprueba automáticamente; la legibilidad y veracidad se revisaron manualmente. La colección no se ejecutó en Runner.",
+      "checkIds": [
+        "delivery-artifacts"
+      ],
+      "exercises": "Apertura del PDF de siete páginas, imágenes por página, contenidos clave, colección de seis solicitudes de solo lectura y archivo de evidencia HTTP."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "version": 3,
+  "id": "001",
+  "mode": "automated",
+  "passed": true,
+  "verifiedAt": "2026-11-01T08:43:06.393Z",
+  "fingerprint": "08ee1ef2a632ec70475038ac9cf4fd7c558fe68075ecc2f928c4c958c6eea9c9",
+  "attestedFiles": 43,
+  "sourceChangedDuringVerification": false,
+  "changedDuringVerification": [],
+  "changedDuringVerificationCount": 0,
+  "reason": null,
+  "checks": [
+    {
+      "id": "test",
+      "command": ".\\mvnw.cmd test",
+      "cwd": ".",
+      "timeoutMs": 120000,
+      "kind": "automated"
+    },
+    {
+      "id": "package",
+      "command": ".\\mvnw.cmd clean package",
+      "cwd": ".",
+      "timeoutMs": 120000,
+      "kind": "automated"
+    }
+  ],
+  "timeoutOverride": null,
+  "acceptance": {
+    "criteria": [
+      {
+        "id": "AC-01",
+        "status": "passed",
+        "method": "automated",
+        "kind": "functional",
+        "checkIds": [
+          "test"
+        ],
+        "checks": [
+          {
+            "checkId": "test",
+            "command": ".\\mvnw.cmd test",
+            "cwd": ".",
+            "status": "PASSED"
+          }
+        ],
+        "execution": "PASSED"
+      },
+      {
+        "id": "AC-02",
+        "status": "passed",
+        "method": "automated",
+        "kind": "functional",
+        "checkIds": [
+          "test"
+        ],
+        "checks": [
+          {
+            "checkId": "test",
+            "command": ".\\mvnw.cmd test",
+            "cwd": ".",
+            "status": "PASSED"
+          }
+        ],
+        "execution": "PASSED"
+      },
+      {
+        "id": "AC-03",
+        "status": "passed",
+        "method": "automated",
+        "kind": "functional",
+        "checkIds": [
+          "test"
+        ],
+        "checks": [
+          {
+            "checkId": "test",
+            "command": ".\\mvnw.cmd test",
+            "cwd": ".",
+            "status": "PASSED"
+          }
+        ],
+        "execution": "PASSED"
+      },
+      {
+        "id": "AC-04",
+        "status": "passed",
+        "method": "automated",
+        "kind": "functional",
+        "checkIds": [
+          "test"
+        ],
+        "checks": [
+          {
+            "checkId": "test",
+            "command": ".\\mvnw.cmd test",
+            "cwd": ".",
+            "status": "PASSED"
+          }
+        ],
+        "execution": "PASSED"
+      },
+      {
+        "id": "AC-05",
+        "status": "passed",
+        "method": "automated",
+        "kind": "functional",
+        "checkIds": [
+          "test"
+        ],
+        "checks": [
+          {
+            "checkId": "test",
+            "command": ".\\mvnw.cmd test",
+            "cwd": ".",
+            "status": "PASSED"
+          }
+        ],
+        "execution": "PASSED"
+      },
+      {
+        "id": "AC-06",
+        "status": "passed",
+        "method": "automated",
+        "kind": "functional",
+        "checkIds": [
+          "test"
+        ],
+        "checks": [
+          {
+            "checkId": "test",
+            "command": ".\\mvnw.cmd test",
+            "cwd": ".",
+            "status": "PASSED"
+          }
+        ],
+        "execution": "PASSED"
+      },
+      {
+        "id": "AC-07",
+        "status": "passed",
+        "method": "automated",
+        "kind": "functional",
+        "checkIds": [
+          "test"
+        ],
+        "checks": [
+          {
+            "checkId": "test",
+            "command": ".\\mvnw.cmd test",
+            "cwd": ".",
+            "status": "PASSED"
+          }
+        ],
+        "execution": "PASSED"
+      },
+      {
+        "id": "AC-08",
+        "status": "passed",
+        "method": "automated",
+        "kind": "functional",
+        "checkIds": [
+          "package"
+        ],
+        "checks": [
+          {
+            "checkId": "package",
+            "command": ".\\mvnw.cmd clean package",
+            "cwd": ".",
+            "status": "PASSED"
+          }
+        ],
+        "execution": "PASSED"
+      }
+    ],
+    "scope": "DECLARED_EVIDENCE_WITH_EXECUTED_CHECK_BINDINGS",
+    "truthOfEvidence": "AGENT_OR_HUMAN_REVIEW_REQUIRED",
+    "automatedChecksPassed": true
+  },
+  "results": [
+    {
+      "command": ".\\mvnw.cmd test",
+      "checkId": "test",
+      "cwd": "C:\\dev\\LaboratorioMCPTdeA",
+      "checkCwd": ".",
+      "kind": "automated",
+      "timeoutMs": 120000,
+      "processId": 19536,
+      "startedAt": "2026-11-01T08:42:33.110Z",
+      "finishedAt": "2026-11-01T08:42:48.146Z",
+      "durationMs": 15036,
+      "output": "[INFO] Scanning for projects...\r\n[INFO] Loaded 24317 auto-discovered prefixes for remote repository central (prefixes-central.txt)\r\n[INFO] \r\n[INFO] -----------------------< com.tdea:mcp-bank-tdea >-----------------------\r\n[INFO] Building  0.0.1-SNAPSHOT\r\n[INFO]   from pom.xml\r\n[INFO] --------------------------------[ jar ]---------------------------------\r\n[INFO] \r\n[INFO] --- resources:3.5.0:resources (default-resources) @ mcp-bank-tdea ---\r\n[INFO] Copying 1 resource from src\\main\\resources to target\\classes\r\n[INFO] Copying 0 resource from src\\main\\resources to target\\classes\r\n[INFO] \r\n[INFO] --- compiler:3.15.0:compile (default-compile) @ mcp-bank-tdea ---\r\n[INFO] Loaded 74 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots.txt)\r\n[INFO] Nothing to compile - all classes are up to date.\r\n[INFO] \r\n[INFO] --- resources:3.5.0:testResources (default-testResources) @ mcp-bank-tdea ---\r\n[INFO] skip non existing resourceDirectory C:\\dev\\LaboratorioMCPTdeA\\src\\test\\resources\r\n[INFO] \r\n[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ mcp-bank-tdea ---\r\n[INFO] Nothing to compile - all classes are up to date.\r\n[INFO] \r\n[INFO] --- surefire:3.5.6:test (default-test) @ mcp-bank-tdea ---\r\n[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider\r\n[INFO] \r\n[INFO] -------------------------------------------------------\r\n[INFO]  T E S T S\r\n[INFO] -------------------------------------------------------\r\n[INFO] Running com.tdea.mcp_bank_tdea.BankServiceTest\r\n03:42:40.623 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.tdea.mcp_bank_tdea.BankServiceTest]: BankServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.\r\n03:42:40.739 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.tdea.mcp_bank_tdea.McpBankTdeaApplication for test class com.tdea.mcp_bank_tdea.BankServiceTest\r\n03:42:40.836 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.tdea.mcp_bank_tdea.BankServiceTest]: BankServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.\r\n03:42:40.839 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.tdea.mcp_bank_tdea.McpBankTdeaApplication for test class com.tdea.mcp_bank_tdea.BankServiceTest\r\nMockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3\r\nOpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended\r\nWARNING: A Java agent has been loaded dynamically (C:\\Users\\brahi\\.m2\\repository\\net\\bytebuddy\\byte-buddy-agent\\1.18.15\\byte-buddy-agent-1.18.15.jar)\r\nWARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning\r\nWARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information\r\nWARNING: Dynamic loading of agents will be disallowed by default in a future release\r\n[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.186 s -- in com.tdea.mcp_bank_tdea.BankServiceTest\r\n[INFO] Running com.tdea.mcp_bank_tdea.McpBankTdeaApplicationTests\r\n[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s -- in com.tdea.mcp_bank_tdea.McpBankTdeaApplicationTests\r\n[INFO] \r\n[INFO] Results:\r\n[INFO] \r\n[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0\r\n[INFO] \r\n[INFO] ------------------------------------------------------------------------\r\n[INFO] BUILD SUCCESS\r\n[INFO] ------------------------------------------------------------------------\r\n[INFO] Total time:  11.776 s\r\n[INFO] Finished at: 2026-11-01T03:42:48-05:00\r\n[INFO] ------------------------------------------------------------------------\r\n",
+      "outputTruncated": false,
+      "outputBytes": 4347,
+      "outputTotalBytes": 4347,
+      "outputLimitExceeded": false,
+      "outputLimitBytes": 8388608,
+      "outputLog": "specs/.omni/verification-logs/5eff5862-2925-41bc-84a0-142961564fd3.log",
+      "timedOut": false,
+      "exitCode": 0,
+      "signal": null,
+      "errorType": null,
+      "outputLogHash": "080884425b2916a3d351c0e9754e160153f8c5bad46e4218fc5727ba9ac41b22"
+    },
+    {
+      "command": ".\\mvnw.cmd clean package",
+      "checkId": "package",
+      "cwd": "C:\\dev\\LaboratorioMCPTdeA",
+      "checkCwd": ".",
+      "kind": "automated",
+      "timeoutMs": 120000,
+      "processId": 27264,
+      "startedAt": "2026-11-01T08:42:48.149Z",
+      "finishedAt": "2026-11-01T08:43:06.347Z",
+      "durationMs": 18198,
+      "output": "[INFO] Scanning for projects...\r\n[INFO] Loaded 24317 auto-discovered prefixes for remote repository central (prefixes-central.txt)\r\n[INFO] \r\n[INFO] -----------------------< com.tdea:mcp-bank-tdea >-----------------------\r\n[INFO] Building  0.0.1-SNAPSHOT\r\n[INFO]   from pom.xml\r\n[INFO] --------------------------------[ jar ]---------------------------------\r\n[INFO] \r\n[INFO] --- clean:3.5.0:clean (default-clean) @ mcp-bank-tdea ---\r\n[INFO] Deleting C:\\dev\\LaboratorioMCPTdeA\\target\r\n[INFO] \r\n[INFO] --- resources:3.5.0:resources (default-resources) @ mcp-bank-tdea ---\r\n[INFO] Copying 1 resource from src\\main\\resources to target\\classes\r\n[INFO] Copying 0 resource from src\\main\\resources to target\\classes\r\n[INFO] \r\n[INFO] --- compiler:3.15.0:compile (default-compile) @ mcp-bank-tdea ---\r\n[INFO] Loaded 74 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots.txt)\r\n[INFO] Recompiling the module because of changed source code.\r\n[INFO] Compiling 9 source files with javac [debug parameters release 21] to target\\classes\r\n[INFO] \r\n[INFO] --- resources:3.5.0:testResources (default-testResources) @ mcp-bank-tdea ---\r\n[INFO] skip non existing resourceDirectory C:\\dev\\LaboratorioMCPTdeA\\src\\test\\resources\r\n[INFO] \r\n[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ mcp-bank-tdea ---\r\n[INFO] Recompiling the module because of changed dependency.\r\n[INFO] Compiling 2 source files with javac [debug parameters release 21] to target\\test-classes\r\n[INFO] \r\n[INFO] --- surefire:3.5.6:test (default-test) @ mcp-bank-tdea ---\r\n[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider\r\n[INFO] \r\n[INFO] -------------------------------------------------------\r\n[INFO]  T E S T S\r\n[INFO] -------------------------------------------------------\r\n[INFO] Running com.tdea.mcp_bank_tdea.BankServiceTest\r\n03:42:58.161 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.tdea.mcp_bank_tdea.BankServiceTest]: BankServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.\r\n03:42:58.286 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.tdea.mcp_bank_tdea.McpBankTdeaApplication for test class com.tdea.mcp_bank_tdea.BankServiceTest\r\n03:42:58.389 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.tdea.mcp_bank_tdea.BankServiceTest]: BankServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.\r\n03:42:58.391 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.tdea.mcp_bank_tdea.McpBankTdeaApplication for test class com.tdea.mcp_bank_tdea.BankServiceTest\r\nMockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3\r\nOpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended\r\nWARNING: A Java agent has been loaded dynamically (C:\\Users\\brahi\\.m2\\repository\\net\\bytebuddy\\byte-buddy-agent\\1.18.15\\byte-buddy-agent-1.18.15.jar)\r\nWARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning\r\nWARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information\r\nWARNING: Dynamic loading of agents will be disallowed by default in a future release\r\n[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.612 s -- in com.tdea.mcp_bank_tdea.BankServiceTest\r\n[INFO] Running com.tdea.mcp_bank_tdea.McpBankTdeaApplicationTests\r\n[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s -- in com.tdea.mcp_bank_tdea.McpBankTdeaApplicationTests\r\n[INFO] \r\n[INFO] Results:\r\n[INFO] \r\n[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0\r\n[INFO] \r\n[INFO] \r\n[INFO] --- jar:3.5.1:jar (default-jar) @ mcp-bank-tdea ---\r\n[INFO] Building jar: C:\\dev\\LaboratorioMCPTdeA\\target\\mcp-bank-tdea-0.0.1-SNAPSHOT.jar\r\n[INFO] \r\n[INFO] --- spring-boot:4.1.2:repackage (repackage) @ mcp-bank-tdea ---\r\n[INFO] Loaded 50 auto-discovered prefixes for remote repository ow2-snapshot (prefixes-ow2-snapshot.txt)\r\n[INFO] Replacing main artifact C:\\dev\\LaboratorioMCPTdeA\\target\\mcp-bank-tdea-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.\r\n[INFO] The original artifact has been renamed to C:\\dev\\LaboratorioMCPTdeA\\target\\mcp-bank-tdea-0.0.1-SNAPSHOT.jar.original\r\n[INFO] ------------------------------------------------------------------------\r\n[INFO] BUILD SUCCESS\r\n[INFO] ------------------------------------------------------------------------\r\n[INFO] Total time:  15.118 s\r\n[INFO] Finished at: 2026-11-01T03:43:06-05:00\r\n[INFO] ------------------------------------------------------------------------\r\n",
+      "outputTruncated": false,
+      "outputBytes": 5305,
+      "outputTotalBytes": 5305,
+      "outputLimitExceeded": false,
+      "outputLimitBytes": 8388608,
+      "outputLog": "specs/.omni/verification-logs/57d66397-fbc4-4c29-a113-fd55dad3c609.log",
+      "timedOut": false,
+      "exitCode": 0,
+      "signal": null,
+      "errorType": null,
+      "outputLogHash": "4ac517f4f994ce13e3e9c117ce31e965e975660787e6024279dbb70aa90ac56a"
+    }
+  ]
+}
