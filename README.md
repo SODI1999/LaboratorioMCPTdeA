@@ -190,3 +190,14 @@ Las pruebas usan H2 en memoria configurada en [src/test/resources/application.pr
 python scripts/build_delivery.py
 python scripts/check_delivery_artifacts.py
 ```
+
+---
+
+## Estructura del repositorio y metodología (OmniSpec)
+
+El proyecto sigue la estructura académica propuesta en [Guia-LaboratorioMCPTDEA.pdf](Guia-LaboratorioMCPTDEA.pdf) y fue desarrollado y documentado bajo el marco de ingeniería guiada por especificaciones **OmniSpec** ([CONSTITUTION.md](CONSTITUTION.md) y [specs/README.md](specs/README.md)), conservando la trazabilidad entre requisitos, diseño y evidencia verificada (`001-bank-mcp-server` y `002-pruebas-reales-entregable`).
+
+- `src/`: código fuente Java (`McpBankTdeaApplication`, `BankService`, entidades JPA, repositorios y `DataInitializer`) y pruebas automatizadas.
+- `output/`: informe PDF final, colección Postman y evidencias verificadas.
+- `scripts/`: automatización de generación del informe, validación de artefactos y pruebas HTTP de solo lectura.
+- `specs/` y `CONSTITUTION.md`: acuerdos de ingeniería, contexto del proyecto y especificaciones OmniSpec.
